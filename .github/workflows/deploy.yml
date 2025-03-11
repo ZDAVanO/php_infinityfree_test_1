@@ -29,6 +29,6 @@ jobs:
       - name: 📝 Add comment to PR
         if: github.event_name == 'pull_request'
         run: |
-          gh pr comment ${{ github.event.pull_request.number }} --body "Deployed project: [web2425ki410ivaniukoo06.kesug.com](http://web2425ki410ivaniukoo06.kesug.com)"
+          gh pr comment ${{ github.event.pull_request.number }} --body "Deployed project1: [web2425ki410ivaniukoo06.kesug.com](http://web2425ki410ivaniukoo06.kesug.com)"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
