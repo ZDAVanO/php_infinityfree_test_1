@@ -5,7 +5,6 @@
   <h1>About Me</h1>
 
   <p>Page loaded at: <span id="load-time"></span></p>
-
   <script>
     document.getElementById('load-time').innerText = new Date().toLocaleString();
   </script>

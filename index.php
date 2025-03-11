@@ -6,20 +6,14 @@
 
     <p>Page loaded at: <span id="load-time"></span></p>
     <script>
-    document.getElementById('load-time').innerText = new Date().toLocaleString();
+        document.getElementById('load-time').innerText = new Date().toLocaleString();
     </script>
 
 
 
 
     <div class="card">
-        <h1>John Doe</h1>
-        <p>Email: johndoe@example.com</p>
-        <p>Phone: +1234567890</p>
-        <p>Website: www.johndoe.com</p>
 
-        <hr>
-        
         <!-- GET Form -->
         <h3>GET Request Form</h3>
         <form method="get" action="index.php">
@@ -77,8 +71,6 @@
     </div>
 
     <script>
-        // Update the load time
-        document.getElementById("loadTime").innerHTML = new Date().toLocaleString();
 
         // POST AJAX
         document.getElementById('postAjaxSubmit').addEventListener('click', function() {
