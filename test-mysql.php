@@ -1,9 +1,17 @@
 <?php
-$servername = "sql312.infinityfree.com";
-$username = "if0_38496044";
-$password = "W9RneO2Pke";
-$dbname = "if0_38496044_test_1"; // Замініть XXX на відповідну назву вашої бази даних
-
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
+    // Налаштування для локального сервера XAMPP
+    $servername = "localhost";
+    $username = "root";
+    $password = ""; // Порожній пароль за замовчуванням для локального сервера
+    $dbname = "test_1"; // Назва вашої локальної бази даних
+} else {
+    // Налаштування для хостингу InfinityFree
+    $servername = "sql312.infinityfree.com";
+    $username = "if0_38496044";
+    $password = "W9RneO2Pke";
+    $dbname = "if0_38496044_test_1"; // Назва вашої бази даних на хостингу
+}
 // Створення підключення
 $conn = new mysqli($servername, $username, $password, $dbname);
 
