@@ -26,6 +26,7 @@ jobs:
           server-dir: ${{ secrets.FTP_REMOTE_DIR }}
 
       
+          
       - name: 📝 Add comment to PR
         if: github.event_name == 'pull_request'
         run: |
